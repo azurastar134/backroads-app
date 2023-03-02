@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer className="section footer">
       <ul className="footer-links">
@@ -63,6 +63,6 @@ function Footer() {
       </p>
     </footer>
   );
-}
+};
 
 export default Footer;

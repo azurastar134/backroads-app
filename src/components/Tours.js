@@ -1,6 +1,6 @@
 import React from "react";
 
-function Tours() {
+const Tours = () => {
   return (
     <section className="section" id="tours">
       <div className="section-title">
@@ -114,6 +114,6 @@ function Tours() {
       </div>
     </section>
   );
-}
+};
 
 export default Tours;

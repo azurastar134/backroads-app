@@ -1,6 +1,6 @@
 import React from "react";
 
-function Services() {
+const Services = () => {
   return (
     <section className="section services" id="services">
       <div className="section-title">
@@ -50,6 +50,6 @@ function Services() {
       </div>
     </section>
   );
-}
+};
 
 export default Services;

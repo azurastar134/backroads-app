@@ -1,11 +1,12 @@
 import React from "react";
+import Logo from "../images/logo.svg";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <img src="./images/about.jpeg" className="nav-logo" alt="backroads" />
+          <img src={Logo} className="nav-logo" alt="backroads" />
           <button type="button" className="nav-toggle" id="nav-toggle">
             <i className="fas fa-bars"></i>
           </button>
@@ -75,6 +76,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

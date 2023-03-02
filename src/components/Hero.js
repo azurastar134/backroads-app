@@ -1,6 +1,6 @@
 import React from "react";
 
-function Hero() {
+const Hero = () => {
   return (
     <section className="hero" id="home">
       <div className="hero-banner">
@@ -15,6 +15,6 @@ function Hero() {
       </div>
     </section>
   );
-}
+};
 
 export default Hero;
