@@ -204,10 +204,10 @@ Hero
   color: var(--clr-white);
   border-color: var(--clr-white);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
   .hero {
-    /*background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-       url("../images/main.jpeg") center/cover no-repeat; */
+    background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+      url("./images/main.jpeg") center/cover no-repeat;
   }
   .hero-banner {
     padding: 0;
@@ -231,6 +231,7 @@ About
 
 @media screen and (min-width: 992px) {
   .about-center {
+    padding-left: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
@@ -240,7 +241,7 @@ About
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 500px) {
   .about-img::before {
     content: "";
     position: absolute;
@@ -248,8 +249,8 @@ About
     height: 100%;
     border: 0.5rem solid var(--clr-primary-5);
     box-sizing: border-box;
-    top: -1.5rem;
-    left: -1.5rem;
+    top: -1rem;
+    left: -1rem;
   }
 
   .about-img {

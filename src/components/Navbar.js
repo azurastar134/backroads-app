@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../images/logo.svg";
-import { pageLinks } from "../data";
-
+import { socialLinks } from "../data";
+import PageLinks from "./PageLinks";
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -13,48 +13,23 @@ const Navbar = () => {
           </button>
         </div>
         <ul className="nav-links" id="nav-links">
-          {pageLinks.map((link) => {
+          <PageLinks />
+        </ul>
+        <ul className="nav-icons">
+          {socialLinks.map((link) => {
             return (
               <li key={link.id}>
-                <a href={link.href} className="nav-link">
-                  {link.text}
+                <a
+                  href={link.href}
+                  target="_blank"
+                  className="nav-icon"
+                  rel="noreferrer"
+                >
+                  <i className={link.icon}></i>
                 </a>
               </li>
             );
           })}
-        </ul>
-
-        <ul className="nav-icons">
-          <li>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              className="nav-icon"
-              rel="noreferrer"
-            >
-              <i className="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              className="nav-icon"
-              rel="noreferrer"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.twitter.com"
-              target="_blank"
-              className="nav-icon"
-              rel="noreferrer"
-            >
-              <i className="fab fa-squarespace"></i>
-            </a>
-          </li>
         </ul>
       </div>
     </nav>
